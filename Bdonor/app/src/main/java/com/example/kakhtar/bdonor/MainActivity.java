@@ -17,8 +17,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         final GlobalClass global = (GlobalClass)getApplicationContext();
-        global.setSharedPreferences().clear();
-        global.setSharedPreferences().commit();
+     //   global.setSharedPreferences().clear();
+     //   global.setSharedPreferences().commit();
         Boolean showWelcomeScreen = global.getSharedPreferences().getBoolean(global.WELCOME_SCREEN_PREFS,true);
         Intent intent;
 
