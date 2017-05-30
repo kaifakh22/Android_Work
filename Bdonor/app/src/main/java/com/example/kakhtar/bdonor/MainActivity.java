@@ -2,9 +2,7 @@ package com.example.kakhtar.bdonor;
 
 import android.app.Activity;
 import android.content.Intent;
-
 import android.os.Bundle;
-import android.widget.LinearLayout;
 
 import com.example.kakhtar.bdonor.activities.MainScreen;
 import com.example.kakhtar.bdonor.activities.WelcomeScreen;
@@ -24,6 +22,7 @@ public class MainActivity extends Activity {
 
 
         if(showWelcomeScreen){
+            
             intent = new Intent(this, WelcomeScreen.class);
 
 
