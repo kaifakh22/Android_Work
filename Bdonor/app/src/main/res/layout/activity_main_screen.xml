@@ -4,11 +4,67 @@
     android:id="@+id/activity_main_screen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context="com.example.kakhtar.bdonor.activities.MainScreen"
 
-    tools:context="com.example.kakhtar.bdonor.activities.MainScreen">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Main Screen"
-    />
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+
+        android:focusableInTouchMode="true"
+        >
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_email"
+            android:hint="E Mail"
+            android:inputType="textEmailAddress"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_password"
+                android:hint="Password"
+                android:inputType="textPassword"
+
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+  <android.support.v7.widget.AppCompatButton
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Login"
+      android:layout_margin="10dp"
+      android:onClick="onLoginClick"
+
+      />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_registration"
+            android:text="No Account yet? Create one."
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
 </RelativeLayout>

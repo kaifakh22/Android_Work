@@ -30,4 +30,7 @@
         <item>@color/dot_dark_screen3</item>
     </array>
 
+    <!-- login background -->
+    <color name="login_bg_color">#f0422e</color>
+
 </resources>
