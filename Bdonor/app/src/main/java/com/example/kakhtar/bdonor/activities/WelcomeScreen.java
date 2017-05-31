@@ -115,7 +115,7 @@ public class WelcomeScreen extends AppCompatActivity implements ViewPager.OnPage
     }
 
     private void launchHomeScreen(){
-        Intent i = new Intent(this,MainScreen.class);
+        Intent i = new Intent(this,LoginScreen.class);
         startActivity(i);
         final GlobalClass global = (GlobalClass) getApplicationContext();
         global.setSharedPreferences().putBoolean(global.WELCOME_SCREEN_PREFS,false);

@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.kakhtar.bdonor.activities.MainScreen;
+import com.example.kakhtar.bdonor.activities.LoginScreen;
 import com.example.kakhtar.bdonor.activities.WelcomeScreen;
 import com.example.kakhtar.bdonor.global.GlobalClass;
 
@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
 
 
         }else{
-            intent = new Intent(this, MainScreen.class);
+            intent = new Intent(this, LoginScreen.class);
 
 
         }
